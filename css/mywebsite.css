@@ -232,7 +232,10 @@ nav {
 
 
 
-
+.icons{
+    display: flex;
+    flex-direction: row;
+}
 
 /* Probably using this container class with a max width to keep tthe nav from growing too much*/
 
@@ -465,7 +468,9 @@ i.fa.fa-bitbucket {
 .footer-icon{
     text-decoration: none;
     color: inherit;
-    font-size: 6rem;
+    font-size: 2rem;
+    width:6rem;
+    height: 8rem;
     color: white;
     margin: 2rem;
 }

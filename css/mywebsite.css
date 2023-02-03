@@ -1,0 +1,511 @@
+/*!
+ * Designed by AIR RAYA GROUP (http://www.airrayagroup.com/)
+ * Designed by iBlogger.ca (http://www.iblogger.ca/)
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Codystar);
+@import url(https://fonts.googleapis.com/css?family=Sacramento);
+@import url(https://fonts.googleapis.com/css?family=Underdog);
+@import url(https://fonts.googleapis.com/css?family=Wallpoet);
+
+
+/* :root{
+    /* --primary: #1C5080;
+    --secondary: #1C5080; }*/
+ 
+
+body {
+    position: relative;
+    display: block;
+    background-image: url("/assets/nmeli.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat !important;
+    background-position: center center;
+    overflow-x: hidden;
+	color: #4a4949;
+    height: 100%;
+    min-height: 100vh;
+}
+/* header {
+	/* background: var(--primary); */
+	/*
+    background-image: url('http://placekitten.com/2400/1400') !important;
+    background-size: cover !important;
+    background-image: -webkit-linear-gradient(right,var(--primary), var(--secondary));
+    background-image: -o-linear-gradient(right,var(--primary), var(--secondary));
+    background-image: -moz-linear-gradient(right,var(--primary), var(--secondary));
+    background-image: linear-gradient(right,var(--primary), var(--secondary));
+}*/
+
+.first-text{
+    color: white;
+    font-size: 50px;
+}
+.second-text{
+    color:white;
+    font-size: 100px;
+}
+.homepage-section{
+    position: absolute;
+    top: 0rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.swiper-container-1{
+    height: 100%;
+  
+
+}
+
+.swiper-container-2{
+    height: 70%;
+    width: 90%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.section-title{
+    height: auto  !important;
+    font-size: 50px;
+    color: white;
+}
+
+.swiper-container-2 .swiper-slide {
+    margin: 2rem;
+    margin-left: 0;
+}
+
+.swiper-container-1 .swiper-slide {
+    height: 100%;
+   /* border: 2px solid purple; */
+}
+
+.swiper-container-1 .main-slide .left{
+    height: 100%;
+   /* border: 2px solid orange; */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    padding-top: 10%;
+}
+
+.swiper-container-2 .main-slide .left{
+    height: auto !important;
+    /* border: 2px solid orange; */
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    padding-top: 10%;
+}
+
+.inset-from-right{
+    padding-right: 2rem;
+}
+
+.inset-from-left {
+    padding-left: 2rem;
+}
+
+
+
+
+
+.swiper-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10rem;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+}
+
+.fs-0 { font-size: .5rem !important }
+/*
+'em' is the height of the lowercase letter m
+the em value changes relative to its parent, so sometimes different in each use
+use the 'rem' for ROOT em that never changes
+16px = 1em = 1rem
+*/
+.fs-0 { font-size: .5rem !important }
+.fs-1 { font-size: .75rem !important }
+.fs-2 { font-size: 1rem !important }
+
+.fs-8 { font-size: 8rem !important }
+
+
+/*
+* {
+    border: 3px solid rgb(100,100,100,.5)
+}
+*/
+
+.entrance-transition .swiper-content {
+    /* animation: slide 1.5s ease forwards; */
+}
+
+.entrance-transition .swiper-content .right-trans {
+    animation: slideRight 1.5s ease forwards;
+}
+
+.entrance-transition .swiper-content .left {
+    animation: slideLeft 1.5s ease backwards;
+}
+
+nav {
+    animation: slideDown 1.5s ease backwards;
+}
+.scrollbar {
+    animation: slideUp 1.5s ease backwards;
+}
+
+@keyframes slide {
+    0% {
+      clip-path: inset(0 100% 0 0);
+      transform: translateX(-20vw);
+    }
+100% {
+      clip-path: inset(0    0 0 0);
+      transform: translateX(0vw);
+    }
+  }
+  
+
+  @keyframes slideRight {
+    0% {
+        /* Objects existt att their own origin pointt (0,0) you can animate to or from this spot*/
+      transform: translateX(50vw);
+    }
+    100% {
+     
+      transform: translateX(0vw);
+    }
+  }
+  
+  @keyframes slideLeft {
+    0% {
+
+      transform: translateX(-50vw);
+    }
+    100% {
+     
+      transform: translateX(0vw);
+    }
+  }
+
+  @keyframes slideDown {
+    0% {
+
+      transform: translateY(-10rem);
+    }
+    100% {
+     
+      transform: translateY(0rem);
+    }
+  }
+
+
+@keyframes slideUp {
+  0% {
+
+    transform: translateX(10rem);
+  }
+  100% {
+   
+    /* transform: translateY(0rem); */
+  }
+}
+
+
+/* .main-slide-0 .swiper-content {
+    background-image: url('/assets/landingmel.jpg') !important;
+    background-repeat: no-repeat !important;
+    background-size: 500px !important;
+   
+} */
+
+
+
+
+
+
+
+/* Probably using this container class with a max width to keep tthe nav from growing too much*/
+
+nav .container {
+    max-width: auto !important;
+    width: 100%;
+}
+
+
+
+.swiper-container-2 .swiper-slide {
+    background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+h1.article-title {
+	color: #fff;
+}
+.article-meta {
+	text-align: center;
+}
+.profile {
+	width: 100px;
+	margin: auto;
+}
+.designer {
+	width: 50px;
+}
+span.name {
+	color: #fff;
+}
+p.article-date {
+	color: #fff;
+}
+h4.front, h1.front {
+	color: #fff;
+}
+p {
+    margin: 0 0 10.5px;
+    line-height: 2;
+	color: #4a4949;
+}
+p.white {
+	color: #fff;
+}
+p.black {
+	color: #000;
+}
+img.about {
+	margin-top: 20px;
+}
+aside#sidebar {
+	background: #f2f1eb;
+	padding: 20px;
+	margin-top: 20px;
+}
+img {
+    border: 0;
+    padding-bottom: 10px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+	padding-top: 10px;
+}
+a.recent {
+	font-size: 20px;
+	
+}
+.btn-default {
+    color: #2a2a2a;
+    background-color: #f6f6f6;
+    border-color: #f6f6f6;
+}
+.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default {
+    color: #ffffff;
+    background-color: #e6d40e;
+    border-color: #e6d40e;
+}
+.navbar-default {
+    background-color: var(--primary);
+}
+.footer-above {
+	background: #0093ff;
+	color: #fff;
+	padding: 40px 0px 40px 0px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #06a4f6;
+    background-color: transparent;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #06a4f6;
+    background-color: transparent;
+}
+.label-default {
+    background-color: #f0cd0e;
+}
+a {
+    color: #06a5f6;
+    text-decoration: none;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #0dbce9;
+}
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    border-color: #0dbce9;
+}
+.footer-below {
+	background: #fff;
+	color: #18181a;
+	padding: 20px 0px 5px 0px;
+}
+#backToTopBtn {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+i.fa.fa-facebook {
+	color: #fff;
+}
+i.fa.fa-twitter {
+	color: #fff;
+}
+i.fa.fa-gitlab {
+	color: #fff;
+}
+i.fa.fa-bitbucket {
+	color: #fff;
+}
+
+.mini-slide{
+    border-radius: .5rem;
+    background: #ccc8;
+    border: 2px solid #ccca;
+    padding: 1rem;
+    
+    
+}
+.wide-content{
+    
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#scroll-alert{
+    display: flex;
+    position:fixed;
+    left: 1rem;
+    bottom: 11.5rem;
+    transform: rotate(90deg);
+    color: white;
+}
+
+#scroll-alert #line{
+    position: relative;
+    transform: rotate(0deg);
+    width: 14rem;
+    height: .2rem;
+    background: white;
+    margin: auto;
+    margin:1rem;
+}
+
+
+
+@media (prefers-reduced-motion) {
+    /* In case someone is motion sick or has light tttriggered seizures - disable all animations this way */
+    * {
+        animation-duration: 0s !important;
+        animation-delay: 0s !important;
+    }
+}
+
+
+/* Apply these styles when tthe window is SMALLER than 976 (mobile-design)*/
+@media only screen and (max-width: 976px){
+    .swiper-content{
+        flex-direction: column;
+    }
+
+    .swiper-container-2{
+        height: 70%;
+        width: 100vw;      
+    }
+
+    .wide-content{
+        padding: 0;
+        justify-content: center;
+    }
+}
+
+.aboutme{
+    color: #ffff;
+    font-size: 50px;
+}
+
+.me-pic{
+    width: 125px;
+    height: 125px;
+}
+
+.footer-icon{
+    text-decoration: none;
+    color: inherit;
+    font-size: 6rem;
+    color: white;
+    margin: 2rem;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+
+}
+#loader{
+ 
+    animation-name: fadeOut;
+    animation-delay: 1s;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ 
+    z-index: 100;
+    object-fit: cover;
+}
+
+
+#loader img {
+    position: relative;
+    left: -5vw;
+    top: -5vh;
+
+    min-height: 110vh;
+    min-width: 110vw;
+    aspect-ratio: 4/2;
+
+}

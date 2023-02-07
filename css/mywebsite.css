@@ -68,6 +68,7 @@ body {
 
 .section-title{
     height: auto  !important;
+    width: 30%;
     font-size: 50px;
     color: white;
 }
@@ -230,12 +231,11 @@ nav {
 
 
 
-
-
-.icons{
+.icons {
     display: flex;
     flex-direction: row;
 }
+
 
 /* Probably using this container class with a max width to keep tthe nav from growing too much*/
 
@@ -474,6 +474,17 @@ i.fa.fa-bitbucket {
     color: white;
     margin: 2rem;
 }
+.footer-git{
+    width:12rem;
+    height: 14rem;
+    margin:0.3rem;
+}
+.footer-python{
+    width:2rem;
+    height: 4rem;
+    margin:0.5rem;
+}
+
 
 @keyframes fadeOut {
     0% {
@@ -513,4 +524,47 @@ i.fa.fa-bitbucket {
     min-width: 110vw;
     aspect-ratio: 4/2;
 
+}
+
+
+/* project footer  for icons */
+.project-footer {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+}
+
+.project-title-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 30%;
+    position: relative;
+}
+.project-robot {
+    height: 200px;
+    position: absolute;
+    top: 30%;
+    left: 100%;
+}
+.contact-robot {
+    height: 200px;
+    position: absolute;
+    top: 200%;
+    
+    
+}
+
+.contact-icons {
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    right: 100px;
+}
+
+.contact-icon {
+    width: 8rem;
+    height: 10rem;
+   
 }

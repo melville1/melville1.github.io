@@ -550,21 +550,46 @@ i.fa.fa-bitbucket {
 }
 .contact-robot {
     height: 200px;
-    position: absolute;
-    top: 200%;
-    
-    
-}
-
-.contact-icons {
-    margin: 0 auto;
     position: relative;
-    top: 50px;
-    right: 100px;
+    right: 70%;
 }
 
 .contact-icon {
     width: 8rem;
     height: 10rem;
-   
+}
+
+.say-hello-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: auto;
+}
+
+.col-left {
+    margin-right: auto;
+}
+
+.contact-icons-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50%;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination {
+    height: 100px;
+    width: 100px;
+}
+.swiper-pagination-bullet {
+    margin-left: auto;
+    position: relative;
+    left: 75%;
 }

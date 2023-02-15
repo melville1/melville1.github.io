@@ -412,7 +412,7 @@ i.fa.fa-bitbucket {
     display: flex;
     position:fixed;
     left: 1rem;
-    bottom: 11.5rem;
+    bottom: 8rem;
     transform: rotate(90deg);
     color: white;
 }
@@ -420,11 +420,13 @@ i.fa.fa-bitbucket {
 #scroll-alert #line{
     position: relative;
     transform: rotate(0deg);
-    width: 14rem;
+    width: 7rem;
     height: .2rem;
     background: white;
     margin: auto;
-    margin:1rem;
+    margin: 1rem;
+    
+    
 }
 
 
@@ -638,6 +640,11 @@ i.fa.fa-bitbucket {
 }
 
 @media screen and (max-width: 425px) {
+
+    .main-title {
+        padding-bottom: 5%;
+    }
+
     .title-text {
         font-size: 50px!important;
     }
@@ -657,9 +664,59 @@ i.fa.fa-bitbucket {
     }
 
     .project-title-row {
-        flex-direction: column-reverse!important;
+        width: 100%;
+    }
+    .projects {
+        position: relative;
+        bottom: 40%;
+        left: 25%;
+    }
+    .project-robot {
+        position: absolute;
+        bottom: 0;
+        left: 20%;
+    }
+
+    .swiper-wrapper {
+        height: 400px!important;
+    }
+
+    .about-me {
+        flex: 1;
+        padding-top: 25%;
+    }
+
+    /* .aboutpic {
+      size:10px!important; 
+    } */
+
+    #say-hello-row {
+        flex-direction: column-reverse;
         justify-content: center;
-        right: 70px;
+        padding-top: 50%;
+    }
+    .contact-robot {
+        position: static;
+    }
+
+    .contact-icons-row {
+        width: 100%;
+        flex-direction: column;
+        flex: 2;
+        padding-bottom: 140%;
+    }
+    .contact-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .row-top {
+        position: relative;
+        left: 10%;
+    }
+
+    .footer-git, .footer-icon {
+        margin: 0;
     }
 
 }

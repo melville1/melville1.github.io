@@ -580,6 +580,11 @@ i.fa.fa-bitbucket {
     height: 50%;
 }
 
+.contact-row {
+    display: flex;
+    flex-direction: row;
+}
+
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -652,6 +657,16 @@ i.fa.fa-bitbucket {
     }
     .aboutpic {
         left: 45%;
+    }
+    .contact-icons-row {
+        width: 100%;
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+    .contact-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
 }
 
@@ -755,17 +770,6 @@ i.fa.fa-bitbucket {
     }
     .contact-robot {
         position: static;
-    }
-
-    .contact-icons-row {
-        width: 100%;
-        flex-direction: column;
-        padding-bottom: 100px;
-    }
-    .contact-row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
     }
     .footer-git {
         width: 7rem;

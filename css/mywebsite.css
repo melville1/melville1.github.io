@@ -866,6 +866,10 @@ i.fa.fa-bitbucket {
    }
 
 }
+#say-hello-row {
+    position: relative;
+    bottom: 100px;
+}
 
 @media screen and (max-width: 375px) {
     .about-me-text {
@@ -873,6 +877,6 @@ i.fa.fa-bitbucket {
     }
     #say-hello-row {
         position: relative;
-        bottom: 200px;
+        bottom: 300px;
     }
 }

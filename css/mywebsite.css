@@ -51,6 +51,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    overflow-y: hidden;
 }
 
 .swiper-container-1{
@@ -110,10 +111,6 @@ body {
 .inset-from-left {
     padding-left: 2rem;
 }
-
-
-
-
 
 .swiper-content {
     display: flex;
@@ -243,22 +240,34 @@ nav .container {
     max-width: auto !important;
     width: 100%;
 }
-
-
+.project-slide {
+    border: 2px solid white;
+    height: 425px!important;
+}
+.project-img {
+    padding-top: 0;
+}
 
 .swiper-container-2 .swiper-slide {
     background: white;
 }
 
-
-
-
-
-
-
-
-
-
+/* navbar */
+.nav-title {
+    color: white;
+    font-size: 30px;
+}
+.nav-text {
+    color: white;
+    font-size: 20px;
+}
+.navbar-collapse {
+    display: flex;
+    justify-content: end;
+}
+.nav-link:hover, .navbar-brand:hover {
+    color: blue;
+}
 
 h1.article-title {
 	color: #fff;
@@ -395,10 +404,7 @@ i.fa.fa-bitbucket {
 .mini-slide{
     border-radius: .5rem;
     background: #ccc8;
-    border: 2px solid #ccca;
     padding: 1rem;
-    
-    
 }
 .wide-content{
     
@@ -412,7 +418,7 @@ i.fa.fa-bitbucket {
     display: flex;
     position:fixed;
     left: 1rem;
-    bottom: 6rem;
+    bottom: 15rem;
     transform: rotate(90deg);
     color: white;
 }
@@ -431,6 +437,8 @@ i.fa.fa-bitbucket {
 
 
 
+
+
 @media (prefers-reduced-motion) {
     /* In case someone is motion sick or has light tttriggered seizures - disable all animations this way */
     * {
@@ -438,6 +446,14 @@ i.fa.fa-bitbucket {
         animation-delay: 0s !important;
     }
 }
+
+
+
+
+
+
+
+
 
 
 /* Apply these styles when tthe window is SMALLER than 976 (mobile-design)*/
@@ -528,7 +544,6 @@ i.fa.fa-bitbucket {
 
 }
 
-
 /* project footer  for icons */
 .project-footer {
     display: flex;
@@ -599,23 +614,57 @@ i.fa.fa-bitbucket {
 .swiper-pagination-bullet {
     margin-left: 99%!important;
 }
-.aboutpic {
-    height:35rem;
-    position: relative;
-    right: 75%;
-}
 
 .swiper-slide {
     padding: 0;
 }
 .project-img {
     width: 100%;
+
 }
+
 .about-me-text {
-     font-size: 20px;
-    /* padding-top: 100px;  */
+    font-size: 20px;
+    margin-top: -320px!important;
+   
     color: white;
 }
+.about-me-title {
+    margin-bottom: 400px;
+    position: relative;
+    bottom: 100px;
+    /* font-size: 35px!important; */
+}
+.card {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutpic {
+    height: 32rem;
+    position: relative;
+    bottom: 200px;
+    right: 100px;
+}
+
+@media screen and (min-width: 1440px) {
+    .project-slide {
+        height: 600px!important;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .project-img {
+        height: 50%;
+        width: auto;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .hello-world {
+        position: relative;
+        right: 10%;
+    }
+} 
 
 @media screen and (max-width: 1024px) {
     .intro-container {
@@ -624,7 +673,6 @@ i.fa.fa-bitbucket {
     }
     .name-title {
         height: 200px!important;
-        margin-top: 20%;
     }
     .hello-world {
         margin-bottom: 50%;
@@ -642,38 +690,27 @@ i.fa.fa-bitbucket {
     .say-hello-row {
         padding-top: 20%;
     }
+    .about-row {
+        padding-top: 0!important;
+    }
+    .aboutpic {
+        height: 32rem;
+        position: relative;
+        bottom: 200px;
+    }
+    .about-me-text {
+        position: relative;
+        bottom: 50px;
+    }
     body {
         background-position: right 1px;
     }
+    .contact-robot {
+        position: relative;
+        left: 75px;
+    }
 }
 
-@media screen and (max-width: 768px) {
-    body {
-        background-position: left 80% top 0px;
-    }
-    .hello-world {
-        margin-bottom: 90%;
-    }
-    .project-container {
-        padding: 0 25px!important;
-    }
-    .contact-robot {
-        left: 20%;
-    }
-    .aboutpic {
-        left: 45%;
-    }
-    .contact-icons-row {
-        width: 100%;
-        flex-direction: column;
-        padding-bottom: 100px;
-    }
-    .contact-row {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-}
 
 @media screen and (max-width: 425px) {
     .title-text {
@@ -683,7 +720,7 @@ i.fa.fa-bitbucket {
         margin-top: 10%!important;
     }
     .hello-world {
-        margin-bottom: 20%!important;
+        margin-bottom: 60%!important;
     }
     .main-title {
         padding-bottom: 5%;
@@ -712,10 +749,15 @@ i.fa.fa-bitbucket {
     }
     .about-me-text {
         font-size: 11px;
-        padding-top: 100px;
         color: white;
+        position: relative;
+        top: 150px;
     }
-
+    .aboutpic {
+        height: 22rem;
+        position: relative;
+        left: 100px;
+    }
     .intro-container {
         padding: 0px;
     }
@@ -748,6 +790,9 @@ i.fa.fa-bitbucket {
     .swiper-wrapper {
         height: 400px!important;
     }
+    .project-slide {
+        height: 200px!important;
+    }
 
     .about-me {
         flex: 1;
@@ -755,8 +800,6 @@ i.fa.fa-bitbucket {
 
     .aboutpic {
         height: 22rem;
-        bottom: 30px;
-        right: 50px;
     }
     #say-hello-row-1 {
         flex-direction: column;
@@ -797,8 +840,39 @@ i.fa.fa-bitbucket {
         margin: 0;
     }
 
-    #scroll-alert {
-        font-size: 10px;
+    .contact-icons-row {
+        padding-bottom: 200%;
     }
 
+    .aboutpic, .about-me-title {
+        position: relative;
+        bottom: 125px;
+    }
+
+   .project-footer {
+    bottom: 100px;
+   }
+
+   .contact-icons-row {
+       flex-direction: column;
+   }
+
+   .contact-row {
+    align-items: center;
+   }
+
+   body {
+       background-position: right -100px top 0px !important;
+   }
+
+}
+
+@media screen and (max-width: 375px) {
+    .about-me-text {
+        font-size: 9px;
+    }
+    #say-hello-row {
+        position: relative;
+        bottom: 100px;
+    }
 }
